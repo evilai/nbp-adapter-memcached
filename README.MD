@@ -31,3 +31,8 @@ Here are basic available methods:
 * `getMulti([ KEY1, KEY2, KEY3 ])` – get an object with shape: { KEY1: VALUE1, KEY2: VALUE2, KEY3: VALUE3 }.
 
 Please, look at [usage example](https://github.com/evilai/nodejs-bot-platform/blob/master/src/bot/skills/clusters/minor/greetings/increase-greet-count.js).
+
+## Tunneling
+Check `tunneling.js`. To bind context of all client's function we need to perform tunneling on each request, so inside skills you can do `memcached.set('Some text)` without specifying application tokens, with suffixes (`platform.entryId.senderId.key`) for keys.
+
+Look at [router-builder.js](https://github.com/evilai/nodejs-bot-platform/blob/master/src/bot/platforms/messenger/bot-name/router-builder.js) as an example.

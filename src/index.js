@@ -5,6 +5,8 @@ import Memcached from 'memcached';
 // TODO: Think about better place for the constant
 const LIFETIME = 720000; // 7200 = 2h
 
+export { default as memcachedTunneling } from './tunneling';
+
 export default function({ logger, address, port, platform }) {
     const memcached = new Memcached(`${address}:${port}`);
 

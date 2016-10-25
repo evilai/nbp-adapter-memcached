@@ -3,6 +3,16 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.memcachedTunneling = undefined;
+
+var _tunneling = require('./tunneling');
+
+Object.defineProperty(exports, 'memcachedTunneling', {
+    enumerable: true,
+    get: function get() {
+        return _interopRequireDefault(_tunneling).default;
+    }
+});
 
 exports.default = function (_ref) {
     var logger = _ref.logger;
