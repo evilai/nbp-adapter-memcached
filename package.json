@@ -1,6 +1,6 @@
 {
   "name": "nbp-adapter-memcached",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Memcached adapter for Node.js Bot Platform",
   "main": "dist/index.js",
   "scripts": {
